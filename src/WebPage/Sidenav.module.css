@@ -1,0 +1,106 @@
+.Body{
+  width: fit-content;
+  padding: 0px 12px 0px 12px;
+  height: 100%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: center;
+}
+
+.Nav{
+    display: none;
+}
+
+.nav img{
+    width: 28px;
+}
+
+.nav div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+    padding: 15px 1px;
+    border-radius: 10px;
+}
+
+.nav div:hover{
+   background-color: hsl(0, 0%, 18.82%, 0.5);
+}
+
+.nav div p{
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.Added{
+    display: none !important;
+}
+
+.Add img{
+    display: none;
+}
+
+@media (max-width: 425px) {
+    .nav{
+        display: none;
+    }
+    .Nav{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+        padding: 0px 20px;
+    }
+
+    .nav div:hover{
+        background: none;
+    }
+
+    .Added{
+        display: block !important;
+    width: fit-content !important;
+    padding: 5px !important;
+    border-radius: 50px !important;
+    display: flex !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+   }
+
+  .Added img{
+    width: 30px !important;
+  }
+
+  .Added:hover{
+    background-color: hsl(0, 0%, 18.82%, 0.5) !important;
+  }
+
+
+    .nav img{
+    width: 23px;
+}
+
+  .Nav div{
+    gap: 0;
+  }
+}
+
+
+@media (max-width: 320px) {
+    .Nav{
+     padding: 0px 10px;
+    }
+    .Added img{
+     width: 28px !important;
+     margin-left: 15px !important;
+    }
+}

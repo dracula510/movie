@@ -1,0 +1,302 @@
+
+.Body{
+    padding:5px 20px 20px 20px;
+    min-width: fit-content;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Menu{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Menu:hover{
+    background-color: hsl(0, 0%, 18.82%, 0.5);
+}
+
+.Menu img{
+    width: 35px;
+}
+
+
+span{
+    display: flex;
+    cursor: pointer;
+}
+
+.span{
+    display: none;
+}
+
+span img{
+    width: 38px;
+}
+
+span h2{
+    font-weight: 400;
+    font-size: 27px;
+    letter-spacing: -2px;
+}
+
+.Search{
+    display: flex;
+}
+
+.FunBtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FunBtn{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.Funbtn{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.SecFunBtn{
+    display: none;
+}
+
+.Back{
+    display: none;
+}
+
+input[type='search']{
+    width: 520px;
+    padding: 10px 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 1px solid hsl(0, 0%, 18.82%, 0.9);
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    caret-color: white;
+    outline: none;
+}
+
+input[type='search']:focus{
+    border: 1px solid #1c62b9;
+}
+
+.Search button{
+    background-color: hsl(0, 0%, 18.82%, 0.5);
+    border: 1px solid hsl(0, 0%, 18.82%);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left-color: hsl(0, 0%, 18.82%, 0);
+    cursor: pointer;
+    padding: 8px 25px;
+}
+
+.Mic{
+    background-color: hsl(0, 0%, 18.82%, 0.5);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Create{
+    background-color: hsl(0, 0%, 18.82%, 0.5);
+    padding: 8px 15px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.Noti{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Noti:hover{
+    background-color: hsl(0, 0%, 18.82%, 0.5);
+}
+
+.User{
+    background-color: hsl(0, 0%, 18.82%, 0.5);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Added{
+    display: none;
+}
+
+.Second{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .Logo img{
+        width: 30px;
+    }
+
+    span h2{
+        font-size: 20px;
+    }
+
+
+    input[type='search']{
+        width: 120px;
+        margin-left: 55px;
+    }
+
+    .Profile{
+        gap: 10px;
+    }
+
+    .Second{
+        display: none;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .Body{
+        padding:2px  10px;
+    }
+
+    span img{
+        width: 40px !important;
+    }
+
+    span h2{
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .FunBtn{
+        display: none !important;
+    }
+
+    .Funbtn{
+        display: flex !important;
+        gap: 7px ;
+    }
+
+   
+    .SecFunBtn{
+        display: flex !important;
+        /* justify-content: space-between !important; */
+        width: 100%;
+    }
+    
+    .Profile{
+        display: none;
+    }
+
+    .Second{
+        display: flex;
+    }
+
+    .FunBtn{display: none;}
+
+    .Profile div{
+        background: none;
+    }
+
+    .Menu{
+        display: none;
+    }
+
+    .Back{
+        display: block;
+    }
+
+    .Span{
+        display: none;
+    }
+
+    .span{
+        display: flex;
+    }
+
+    input[type='search']{
+        width: 210px;
+    }
+
+    .Search{
+        height: 32px;
+    }
+
+    .Search img{
+        height: 15px;
+    }
+
+    .Mic{
+        padding: 3px;
+        height: 30px;
+    }
+
+    .Back img{
+        width: 30px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    input[type='search']{
+        width: 160px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .Create, .Noti{
+        display: none;
+    }
+
+    .User img{
+        width: 30px !important;
+    }
+
+    
+    input[type='search']{
+        width: 110px;
+    }
+
+
+}
+
